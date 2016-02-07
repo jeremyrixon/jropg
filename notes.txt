@@ -1,0 +1,21 @@
+https://appengine.google.com
+https://console.developers.google.com/
+project id: jropg1
+mvn archetype:generate -Dappengine-version=1.9.32 -Dapplication-id=jropg1 -Dfilter=com.google.appengine.archetypes:appengine-skeleton-archetype
+mvn install appengine:update
+# mvn appengine:devserver
+# mvn help:describe -Dplugin=appengine
+# https://cloud.google.com/appengine/docs/java/tools/maven
+rm ~/.appcfg_oauth2_tokens_java
+# admin.google.com
+
+php -S localhost:8080 # (-t)
+
+
+# FF6 sprites:
+# http://www.spriters-resource.com/snes/ff6/
+# http://www.fantasyanime.com/finalfantasy/ff6/ff6maps.htm
+# http://www.videogamesprites.net/FinalFantasy6/
+
+
+
