@@ -25,7 +25,7 @@ ig.module(
                 var mx = (ig.input.mouse.x + ig.game.screen.x); //Figures out the x coord of the mouse in the entire world
                 var my = (ig.input.mouse.y + ig.game.screen.y); //Figures out the y coord of the mouse in the entire world
                 var r = Math.atan2(my-this.pos.y, mx-this.pos.x); //Gives angle in radians from chocobo's location to the mouse location, assuming directly right is 0
-                if (r > Math.PI * 3 / 4 || r < Math.PI * -3 * 4) {
+                if (r > Math.PI * 3 / 4 || r < - Math.PI * 3 / 4) {
                     this.vel.x = -40;
                     this.currentAnim = this.anims.left;
                 } else if (r > Math.PI / 4) {
