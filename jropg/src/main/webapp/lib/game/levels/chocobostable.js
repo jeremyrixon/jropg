@@ -1,15 +1,21 @@
 ig.module( 'game.levels.chocobostable' )
-.requires( 'impact.image' )
+.requires( 'impact.image','game.entities.chocobo' )
 .defines(function(){
 LevelChocobostable=/*JSON[*/{
-	"entities": [],
+	"entities": [
+		{
+			"type": "EntityChocobo",
+			"x": 60,
+			"y": 100
+		}
+	],
 	"layer": [
 		{
 			"name": "chocobostablebg",
 			"width": 9,
 			"height": 16,
 			"linkWithCollision": false,
-			"visible": true,
+			"visible": 1,
 			"tilesetName": "media/chocobostable.png",
 			"repeat": false,
 			"preRender": true,
